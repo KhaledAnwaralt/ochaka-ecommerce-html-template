@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ochaka - Multipurpose eCommerce HTML Template</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Newsletter Modal -->
+    <div id="newsletter-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-image">
+                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Newsletter">
+            </div>
+            <div class="modal-text">
+                <h3>Subscribe to our newsletter!</h3>
+                <p>Receive 20% off your next order, along with exclusive offers and more!</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <p>Up to 50% off Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <div class="banner-links">
+            <a href="#" class="banner-link">Men</a>
+            <a href="#" class="banner-link">Women</a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <ul class="header-links">
+                <li><a href="#">Help & FAQs</a></li>
+                <li><a href="#">Factory</a></li>
+                <li class="currency-selector">
+                    <select>
+                        <option>USD</option>
+                        <option>VND</option>
+                    </select>
+                </li>
+                <li class="language-selector">
+                    <select>
+                        <option>English</option>
+                        <option>العربية</option>
+                        <option>简体中文</option>
+                        <option>اردو</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        
+        <nav class="main-nav">
+            <div class="nav-container">
+                <button class="mobile-menu-btn">☰</button>
+                <div class="logo">
+                    <h1>Ochaka.</h1>
+                </div>
+                <div class="nav-icons">
+                    <button class="search-btn">🔍</button>
+                    <button class="wishlist-btn">
+                        ♡
+                        <span class="count">7</span>
+                    </button>
+                    <button class="cart-btn">
+                        🛒
+                        <span class="count">24</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider">
+        <div class="slider-container">
+            <div class="slide active">
+                <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Fall Winter Collection">
+                <div class="slide-content">
+                    <h2>Fall Winter<br>Collection</h2>
+                    <p>Vivamus lacinia odio vitae vestibulum vestibulum</p>
+                    <button class="shop-btn">Shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Spring Summer Collection">
+                <div class="slide-content">
+                    <h2>Spring Summer<br>Collection</h2>
+                    <p>Discover the elegance of renewal with soft tones and flowing textures.</p>
+                    <button class="shop-btn">Shop now</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Urban Edge Series">
+                <div class="slide-content">
+                    <h2>Urban Edge<br>Series</h2>
+                    <p>Bold cuts and minimalist design for the modern city lifestyle.</p>
+                    <button class="shop-btn">Shop now</button>
+                </div>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <button class="prev-btn">‹</button>
+            <button class="next-btn">›</button>
+        </div>
+        <div class="slider-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+
+    <!-- Collections Grid -->
+    <section class="collections-grid">
+        <div class="container">
+            <div class="collection-card">
+                <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Clothing">
+                <div class="collection-content">
+                    <h3>Clothing</h3>
+                    <button class="shop-btn">Shop now</button>
+                </div>
+            </div>
+            <div class="collection-card">
+                <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Trending">
+                <div class="collection-content">
+                    <h3>Trending</h3>
+                    <button class="shop-btn">Shop now</button>
+                </div>
+            </div>
+            <div class="collection-card">
+                <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Dresses">
+                <div class="collection-content">
+                    <h3>Dresses</h3>
+                    <button class="shop-btn">Shop now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Tabs Section -->
+    <section class="product-tabs">
+        <div class="container">
+            <h2>New Arrivals</h2>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="trending">TRENDING</button>
+                <button class="tab-btn" data-tab="bestseller">BEST SELLER</button>
+                <button class="tab-btn" data-tab="onsale">ON SALE</button>
+            </div>
+            
+            <div class="tab-content active" id="trending">
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Summer Two Piece Set">
+                            <div class="product-badge hot">Hot</div>
+                            <div class="product-actions">
+                                <button class="action-btn">🛒</button>
+                                <button class="action-btn">♡</button>
+                                <button class="action-btn">⚖</button>
+                                <button class="action-btn">👁</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-sizes">
+                                <span>XS</span>
+                                <span>S</span>
+                                <span>M</span>
+                            </div>
+                            <h3>Summer Two Piece Set</h3>
+                            <div class="product-price">
+                                <span class="old-price">$99,99</span>
+                                <span class="new-price">$69,99</span>
+                            </div>
+                            <div class="product-colors">
+                                <span class="color brown"></span>
+                                <span class="color blue"></span>
+                                <span class="color orange"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Nike Sportswear Tee Shirts">
+                            <div class="product-badge flash-sale">Flash sale</div>
+                            <div class="countdown-timer">
+                                <span class="timer">00d : 07h : 04m : 31s</span>
+                            </div>
+                            <div class="product-actions">
+                                <button class="action-btn">🛒</button>
+                                <button class="action-btn">♡</button>
+                                <button class="action-btn">⚖</button>
+                                <button class="action-btn">👁</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Nike Sportswear Tee Shirts</h3>
+                            <div class="product-price">
+                                <span class="old-price">$99,99</span>
+                                <span class="new-price">$69,99</span>
+                            </div>
+                            <div class="product-colors">
+                                <span class="color pink"></span>
+                                <span class="color beige"></span>
+                                <span class="color olive"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Women's Straight Leg Pants">
+                            <div class="product-badge trending">Trending</div>
+                            <div class="sale-banner">TOP PRODUCT SALE OFF 50%</div>
+                            <div class="product-actions">
+                                <button class="action-btn">🛒</button>
+                                <button class="action-btn">♡</button>
+                                <button class="action-btn">⚖</button>
+                                <button class="action-btn">👁</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Women's Straight Leg Pants</h3>
+                            <div class="product-price">
+                                <span class="old-price">$29,99</span>
+                                <span class="new-price">$19,99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="bestseller">
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="V-neck button down vest">
+                            <div class="product-badge new">New</div>
+                            <div class="product-actions">
+                                <button class="action-btn">🛒</button>
+                                <button class="action-btn">♡</button>
+                                <button class="action-btn">⚖</button>
+                                <button class="action-btn">👁</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-sizes">
+                                <span>XS</span>
+                                <span>S</span>
+                                <span>M</span>
+                            </div>
+                            <h3>V-neck button down vest</h3>
+                            <div class="product-price">
+                                <span class="old-price">$99,99</span>
+                                <span class="new-price">$69,99</span>
+                            </div>
+                            <div class="product-colors">
+                                <span class="color beige"></span>
+                                <span class="color dark"></span>
+                                <span class="color sage-green"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Half sleeve crop top">
+                            <div class="product-badge flash-sale">Flash sale</div>
+                            <div class="sale-banner">TOP PRODUCT SALE OFF 50%</div>
+                            <div class="product-actions">
+                                <button class="action-btn">🛒</button>
+                                <button class="action-btn">♡</button>
+                                <button class="action-btn">⚖</button>
+                                <button class="action-btn">👁</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-sizes">
+                                <span>XS</span>
+                                <span>M</span>
+                            </div>
+                            <h3>Half sleeve crop top</h3>
+                            <div class="product-price">
+                                <span class="old-price">$119,99</span>
+                                <span class="new-price">$84,99</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Summer two piece set">
+                            <div class="product-badge discount">20% OFF</div>
+                            <div class="product-actions">
+                                <button class="action-btn">🛒</button>
+                                <button class="action-btn">♡</button>
+                                <button class="action-btn">⚖</button>
+                                <button class="action-btn">👁</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Summer two piece set</h3>
+                            <div class="product-price">
+                                <span class="old-price">$139,99</span>
+                                <span class="new-price">$94,99</span>
+                            </div>
+                            <div class="product-colors">
+                                <span class="color dark"></span>
+                                <span class="color beige"></span>
+                                <span class="color jade"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="onsale">
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Women's straight leg pants">
+                            <div class="product-badge new-arrival">New arrival</div>
+                            <div class="sale-banner">TOP PRODUCT SALE OFF 50%</div>
+                            <div class="product-actions">
+                                <button class="action-btn">🛒</button>
+                                <button class="action-btn">♡</button>
+                                <button class="action-btn">⚖</button>
+                                <button class="action-btn">👁</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-sizes">
+                                <span>XS</span>
+                                <span>S</span>
+                                <span>M</span>
+                            </div>
+                            <h3>Women's straight leg pants</h3>
+                            <div class="product-price">
+                                <span class="old-price">$69,99</span>
+                                <span class="new-price">$44,99</span>
+                            </div>
+                            <div class="product-colors">
+                                <span class="color white"></span>
+                                <span class="color pink"></span>
+                                <span class="color beige"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Short sleeve office shirt">
+                            <div class="product-actions">
+                                <button class="action-btn">🛒</button>
+                                <button class="action-btn">♡</button>
+                                <button class="action-btn">⚖</button>
+                                <button class="action-btn">👁</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-sizes">
+                                <span>XS</span>
+                                <span>S</span>
+                                <span>M</span>
+                                <span>L</span>
+                            </div>
+                            <h3>Short sleeve office shirt</h3>
+                            <div class="product-price">
+                                <span class="old-price">$129,99</span>
+                                <span class="new-price">$89,99</span>
+                            </div>
+                            <div class="product-colors">
+                                <span class="color beige"></span>
+                                <span class="color black"></span>
+                                <span class="color violet"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop This Look -->
+    <section class="shop-this-look">
+        <div class="container">
+            <h2>Shop This Look</h2>
+            <div class="lookbook-section">
+                <div class="lookbook-image">
+                    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Lookbook">
+                    <div class="lookbook-content">
+                        <h3>Lookbook</h3>
+                        <p>347 product</p>
+                        <button class="explore-btn">EXPLORE NOW</button>
+                    </div>
+                </div>
+                <div class="recommended-products">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="V-neck button down vest">
+                            <div class="product-badge hot">Hot</div>
+                            <div class="product-actions">
+                                <button class="action-btn">🛒</button>
+                                <button class="action-btn">♡</button>
+                                <button class="action-btn">⚖</button>
+                                <button class="action-btn">👁</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>V-neck button down vest</h3>
+                            <div class="product-price">
+                                <span class="old-price">$99,99</span>
+                                <span class="new-price">$69,99</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Nike Sportswear Tee Shirts">
+                            <div class="product-badge flash-sale">Flash sale</div>
+                            <div class="product-actions">
+                                <button class="action-btn">🛒</button>
+                                <button class="action-btn">♡</button>
+                                <button class="action-btn">⚖</button>
+                                <button class="action-btn">👁</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Nike Sportswear Tee Shirts</h3>
+                            <div class="product-price">
+                                <span class="old-price">$89,99</span>
+                                <span class="new-price">$59,99</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Women's T-shirts Plus Size">
+                            <div class="product-badge trending">Trending</div>
+                            <div class="sale-banner">TOP PRODUCT SALE OFF 50%</div>
+                            <div class="product-actions">
+                                <button class="action-btn">🛒</button>
+                                <button class="action-btn">♡</button>
+                                <button class="action-btn">⚖</button>
+                                <button class="action-btn">👁</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <div class="product-sizes">
+                                <span>XS</span>
+                                <span>S</span>
+                                <span>M</span>
+                            </div>
+                            <h3>Women's T-shirts Plus Size</h3>
+                            <div class="product-price">
+                                <span class="old-price">$79,99</span>
+                                <span class="new-price">$49,99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="customer-reviews">
+        <div class="container">
+            <h2>Customer Reviews</h2>
+            <div class="reviews-carousel">
+                <div class="review-slide active">
+                    <div class="review-content">
+                        <h4>Best Product Quality</h4>
+                        <p>"The build quality is excellent and everything works smoothly. I can feel the difference compared to other brands"</p>
+                        <div class="reviewer">
+                            <span class="name">Brooklyn Simmons</span>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="review-product">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="Short Sleeve Office Shirt">
+                        <div class="product-details">
+                            <h5>Short sleeve office shirt</h5>
+                            <span class="price">$14,99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-slide">
+                    <div class="review-content">
+                        <h4>Dedicated Service</h4>
+                        <p>"The support from ACIS has been outstanding. Anytime we had a question or needed help, their team responded quickly and professionally."</p>
+                        <div class="reviewer">
+                            <span class="name">Mas Shin</span>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="review-product">
+                        <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="UrbanCool Work Shirt">
+                        <div class="product-details">
+                            <h5>UrbanCool Work Shirt</h5>
+                            <span class="price">$59,99</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-slide">
+                    <div class="review-content">
+                        <h4>Exceptional Reliability</h4>
+                        <p>"No surprises, just consistent and dependable performance every single time without fail."</p>
+                        <div class="reviewer">
+                            <span class="name">Manh Tran</span>
+                            <div class="rating">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="review-product">
+                        <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" alt="WorkMode Lite">
+                        <div class="product-details">
+                            <h5>WorkMode Lite</h5>
+                            <span class="price">$39,99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-section">
+        <div class="container">
+            <h2>Read Our Blog</h2>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Blog Post">
+                        <div class="blog-date">March 2, 2025</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Bring Confidence With Simple T-shirt Style</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit in malesuada magna faucibus. Pellentesque eget finibus nunc.</p>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Blog Post">
+                        <div class="blog-date">March 2, 2025</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Experience the 90s style of mixing and matching</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit in malesuada magna faucibus. Pellentesque eget finibus nunc.</p>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Blog Post">
+                        <div class="blog-date">March 2, 2025</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>April 4th the biggest sale of the year</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit in malesuada magna faucibus. Pellentesque eget finibus nunc.</p>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" alt="Blog Post">
+                        <div class="blog-date">March 2, 2025</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Top 5 simple accessories you need in your wardrobe</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit in malesuada magna faucibus. Pellentesque eget finibus nunc.</p>
+                        <a href="#" class="read-more">Read more</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Gallery -->
+    <section class="instagram-gallery">
+        <div class="container">
+            <h2>Follow Us On Instagram</h2>
+            <p class="instagram-subtitle">@ochaka: Follow us and get 20% off coupon</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Instagram Post">
+                    <div class="gallery-overlay">
+                        <span class="instagram-icon">📷</span>
+                        <a href="#" class="view-product">View product</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Instagram Post">
+                    <div class="gallery-overlay">
+                        <span class="instagram-icon">📷</span>
+                        <a href="#" class="view-product">View product</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Instagram Post">
+                    <div class="gallery-overlay">
+                        <span class="instagram-icon">📷</span>
+                        <a href="#" class="view-product">View product</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Instagram Post">
+                    <div class="gallery-overlay">
+                        <span class="instagram-icon">📷</span>
+                        <a href="#" class="view-product">View product</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Instagram Post">
+                    <div class="gallery-overlay">
+                        <span class="instagram-icon">📷</span>
+                        <a href="#" class="view-product">View product</a>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" alt="Instagram Post">
+                    <div class="gallery-overlay">
+                        <span class="instagram-icon">📷</span>
+                        <a href="#" class="view-product">View product</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact us</h3>
+                    <div class="contact-info">
+                        <p>📍 6500 Lorem Street Chicago, IL 55030 Dolor sit amet</p>
+                        <p>📞 +8(800) 123 4567</p>
+                        <p>✉ themesflat@support.com</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#">f</a>
+                        <a href="#">📷</a>
+                        <a href="#">𝕏</a>
+                        <a href="#">♪</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Shopping</h3>
+                    <ul>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Shop by Brand</a></li>
+                        <li><a href="#">Track order</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">My Wishlist</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Term & Policy</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">News & Blog</a></li>
+                        <li><a href="#">Refunds</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Let's keep in touch</h3>
+                    <p>Enter your email below to be the first to know about new collections and product launches.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe →</button>
+                    </form>
+                    <p class="terms-text">By clicking subscribe, you agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <a href="#">Help & FAQs</a>
+                    <a href="#">Factory</a>
+                </div>
+                <div class="payment-methods">
+                    <span>Payment:</span>
+                    <div class="payment-icons">
+                        <span>VISA</span>
+                        <span>MC</span>
+                        <span>AMEX</span>
+                        <span>DISC</span>
+                        <span>PP</span>
+                    </div>
+                </div>
+                <div class="footer-selectors">
+                    <select class="currency-select">
+                        <option>USD</option>
+                        <option>VND</option>
+                    </select>
+                    <select class="language-select">
+                        <option>English</option>
+                        <option>العربية</option>
+                        <option>简体中文</option>
+                        <option>اردو</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Bottom Navigation -->
+    <div class="mobile-nav">
+        <div class="nav-item">
+            <span class="nav-icon">🏪</span>
+            <span class="nav-label">Shop</span>
+        </div>
+        <div class="nav-item">
+            <span class="nav-icon">🔍</span>
+            <span class="nav-label">Search</span>
+        </div>
+        <div class="nav-item">
+            <span class="nav-icon">👤</span>
+            <span class="nav-label">Account</span>
+        </div>
+        <div class="nav-item">
+            <span class="nav-icon">♡</span>
+            <span class="nav-label">Wishlist</span>
+            <span class="nav-count">7</span>
+        </div>
+        <div class="nav-item">
+            <span class="nav-icon">🛒</span>
+            <span class="nav-label">Cart</span>
+            <span class="nav-count">24</span>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
